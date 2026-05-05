@@ -9,7 +9,7 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fff; /* biała strona */
+    background: #fff;
     color: #111;
   }
 
@@ -30,11 +30,7 @@
     font-size: 28px;
   }
 
-  .box p {
-    color: #555;
-  }
-
-  /* ===== GALERIA ===== */
+  /* ===== GALERIA FILMÓW ===== */
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -60,24 +56,24 @@
     object-fit: cover;
   }
 
-  /* ===== ZDJĘCIA ===== */
+  /* ===== ZDJĘCIA 9:16 ===== */
   .bottom-gallery {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 40px auto;
     display: grid;
     gap: 15px;
     padding: 0 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
   .bottom-gallery img {
     width: 100%;
-    height: 180px;
+    aspect-ratio: 9 / 16; /* 🔥 pionowe proporcje */
     object-fit: cover;
     border-radius: 12px;
   }
 
-  /* ===== STOPKA (CZARNA) ===== */
+  /* ===== STOPKA ===== */
   footer {
     margin-top: 60px;
     padding: 20px;
@@ -92,8 +88,7 @@
 
 <!-- ===== BOX ===== -->
 <div class="box">
-  <h2>to nie filmy… to arcydzieła</h2>
-  <p>kliknij i zobacz co tam siedzi 👀</p>
+  <h2>nasze wideła👀</h2>
 
   <div class="gallery">
     <a href="https://www.youtube.com/watch?v=uAAjNI-Yj4Y" target="_blank">
