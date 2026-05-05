@@ -13,7 +13,6 @@
     color: #111;
   }
 
-  /* ===== BOX ===== */
   .box {
     max-width: 1050px;
     margin: 50px auto;
@@ -25,7 +24,6 @@
     text-align: center;
   }
 
-  /* ===== GALERIA ===== */
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -46,7 +44,6 @@
     object-fit: cover;
   }
 
-  /* ===== PROSTA LINIA ===== */
   .divider {
     width: 80%;
     height: 1px;
@@ -54,7 +51,15 @@
     margin: 60px auto;
   }
 
-  /* ===== ZDJĘCIA ===== */
+  /* ===== TYTUŁ ===== */
+  .section-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+  }
+
   .bottom-gallery {
     max-width: 900px;
     margin: 40px auto;
@@ -72,7 +77,6 @@
     cursor: pointer;
   }
 
-  /* ===== LIGHTBOX ===== */
   .lightbox {
     position: fixed;
     top: 0;
@@ -92,7 +96,6 @@
     border-radius: 12px;
   }
 
-  /* ===== STOPKA ===== */
   footer {
     margin-top: 60px;
     padding: 20px;
@@ -124,12 +127,13 @@
   </div>
 </div>
 
-<!-- ===== LINIA ===== -->
-<div class="divider"></div><br>
+<div class="divider"></div>
 
-<!-- ===== ZDJĘCIA ===== -->
-<h2>zdjęcia naszego kochanego misia</h2><br><br>
-  <div class="bottom-gallery">
+<div class="section-title">
+  zdjęcia naszego kochanego redka 🥀
+</div>
+
+<div class="bottom-gallery">
   <img src="1.jpg" onclick="openImage(this.src)">
   <img src="2.jpg" onclick="openImage(this.src)">
   <img src="3.jpg" onclick="openImage(this.src)">
@@ -138,15 +142,16 @@
   <img src="6.jpg" onclick="openImage(this.src)">
   <img src="7.jpg" onclick="openImage(this.src)">
   <img src="8.jpg" onclick="openImage(this.src)">
+  <img src="elo (2).jpg" onclick="openImage(this.src)">
+  <img src="elo (3).jpg" onclick="openImage(this.src)">
 </div>
 
-<!-- ===== LIGHTBOX ===== -->
 <div class="lightbox" id="lightbox" onclick="closeImage()">
   <img id="lightbox-img">
 </div>
 
 <footer>
-  &copy; 2026 redekcfel.pl Wszystkie prawa zastrzeżone.<br>
+  &copy; 2026 Redekcfel. Wszystkie prawa zastrzeżone<br>
   Strona powstała z miłości do Jakuba Retkowskiego
 </footer>
 
