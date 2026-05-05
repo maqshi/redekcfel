@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>😻😻😻</title>
+<title>arcydzieła</title>
 
 <style>
   body {
@@ -25,6 +25,7 @@
     text-align: center;
   }
 
+  /* ===== GALERIA ===== */
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -43,6 +44,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* ===== PROSTA LINIA ===== */
+  .divider {
+    width: 80%;
+    height: 1px;
+    background: #ddd;
+    margin: 60px auto;
   }
 
   /* ===== ZDJĘCIA ===== */
@@ -115,8 +124,12 @@
   </div>
 </div>
 
+<!-- ===== LINIA ===== -->
+<div class="divider"></div><br>
+
 <!-- ===== ZDJĘCIA ===== -->
-<div class="bottom-gallery">
+<h2>zdjęcia naszego kochanego misia</h2><br><br>
+  <div class="bottom-gallery">
   <img src="1.jpg" onclick="openImage(this.src)">
   <img src="2.jpg" onclick="openImage(this.src)">
   <img src="3.jpg" onclick="openImage(this.src)">
@@ -125,8 +138,6 @@
   <img src="6.jpg" onclick="openImage(this.src)">
   <img src="7.jpg" onclick="openImage(this.src)">
   <img src="8.jpg" onclick="openImage(this.src)">
-  <img src="elo (2).jpg" onclick="openImage(this.src)">
-  <img src="elo (3).jpg" onclick="openImage(this.src)">
 </div>
 
 <!-- ===== LIGHTBOX ===== -->
@@ -135,7 +146,7 @@
 </div>
 
 <footer>
-  &copy; 2026 Redekcfel. Wszystkie prawa zastrzeżone.<br>
+  &copy; 2026 redekcfel.pl Wszystkie prawa zastrzeżone.<br>
   Strona powstała z miłości do Jakuba Retkowskiego
 </footer>
 
