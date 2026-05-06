@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>arcydzieła</title>
+<title>redekcfel.pl</title>
 
 <style>
   body {
@@ -51,13 +51,11 @@
     margin: 60px auto;
   }
 
-  /* ===== TYTUŁ ===== */
   .section-title {
     text-align: center;
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #111;
   }
 
   .bottom-gallery {
@@ -69,11 +67,15 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
-  .bottom-gallery img {
+  .bottom-gallery img,
+  .bottom-gallery video {
     width: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
     border-radius: 12px;
+  }
+
+  .bottom-gallery img {
     cursor: pointer;
   }
 
@@ -142,8 +144,11 @@
   <img src="6.jpg" onclick="openImage(this.src)">
   <img src="7.jpg" onclick="openImage(this.src)">
   <img src="8.jpg" onclick="openImage(this.src)">
-  <img src="elo (2).jpg" onclick="openImage(this.src)">
-  <img src="elo (3).jpg" onclick="openImage(this.src)">
+
+  <!-- 🎬 TWÓJ FILM -->
+  <video controls>
+    <source src="476802421_9321517907905346_6155111677838574864_n.mp4" type="video/mp4">
+  </video>
 </div>
 
 <div class="lightbox" id="lightbox" onclick="closeImage()">
